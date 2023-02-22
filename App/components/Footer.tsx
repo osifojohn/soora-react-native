@@ -6,7 +6,7 @@ import AppText from './AppText/AppText';
 
 const Footer = () => {
   return (
-    <View>
+    <View style={{ paddingBottom: 33 }}>
       <View style={styles.container}>
         <View style={styles.iconContainer}>
           <Icon name="facebook" type="font-awesome" color="black" />
@@ -45,7 +45,7 @@ const Footer = () => {
         </View>
       </View>
       <AppText style={styles.copyright}>
-        Copy &copy;2022 Soora. All rights reserved
+        Copy &copy; 2022 Soora. All rights reserved
       </AppText>
     </View>
   );
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
 
   copyright: {
     fontSize: 15,
-    paddingTop: 8,
+    paddingTop: 22,
     alignSelf: 'center',
   },
 });
