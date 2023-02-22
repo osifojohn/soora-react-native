@@ -52,13 +52,14 @@ const Footer = () => {
 };
 
 export default Footer;
+
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     justifyContent: 'center',
     paddingBottom: 15,
     borderBottomWidth: 1,
-    marginTop: 50,
+    marginTop: 120,
   },
   iconContainer: {
     display: 'flex',
@@ -74,9 +75,7 @@ const styles = StyleSheet.create({
   icon: {
     // fontSize: 20,
   },
-  background: {
-    flex: 1,
-  },
+
   copyright: {
     fontSize: 15,
     paddingTop: 8,

@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     position: 'relative',
   },
   textInput: {
-    color: colors.dark,
+    color: colors,
     borderColor: colors.black,
     borderWidth: 1,
     padding: 16,

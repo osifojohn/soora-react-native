@@ -1,13 +1,17 @@
 import React from 'react';
 import { StyleSheet, View, ScrollView } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import Screen from '../components/Screen';
 import { BlurView } from 'expo-blur';
-import AppHeader from '../components/AppHeader';
-import AppHero from '../components/AppHero';
-import CommingSoonContent from '../components/CommingSoonContent';
-import AppTextInput from '../components/AppTextInput';
-import Footer from '../components/Footer';
+
+import {
+  Screen,
+  AppHeader,
+  AppHero,
+  CommingSoonContent,
+  SooraImage,
+  AppTextInput,
+  Footer,
+} from '../components';
 
 const HomeScreen = () => {
   return (
@@ -15,8 +19,8 @@ const HomeScreen = () => {
       <BlurView intensity={100} style={StyleSheet.absoluteFill} />
       <LinearGradient
         colors={[
-          'rgba(59, 89, 152, 0.1)',
-          'rgba(59, 89, 152, 0.1)',
+          'rgba(59, 89, 152, 0.02)',
+          'rgba(59, 10, 152, 0.1)',
           'rgba(255, 0, 0, 0.05)',
         ]}
         style={styles.background}
@@ -24,10 +28,12 @@ const HomeScreen = () => {
         <ScrollView>
           <AppHeader />
           <AppHero />
+          <SooraImage source={require('../../assets/soora-img-1.png')} />
           <View>
             <CommingSoonContent text1="Get Notified" text2="When we Launch" />
             <AppTextInput button="button" />
           </View>
+          <SooraImage source={require('../../assets/soora-img-2.png')} />
           <Footer />
         </ScrollView>
       </LinearGradient>
