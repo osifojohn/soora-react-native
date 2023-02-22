@@ -36,7 +36,7 @@ const SooraImage = ({ source }: SooraImageProps) => {
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    marginTop: 30,
+    marginTop: 20,
   },
 });
 export default SooraImage;
